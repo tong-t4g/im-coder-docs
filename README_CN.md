@@ -147,11 +147,10 @@ im-coder start
 ## 常见问题
 - 整个安装配置过程均可在 Coding Agent 中通过对话完成，体验丝滑
 - 在 Codex 中使用 IM-Coder 命令，无需输入“/”
+- MacOS 用户在通过第三方 API 使用 Claude Code 时，需将 ANTHROPIC_BASE_URL、ANTHROPIC_AUTH_TOKEN 设置在 ~/.zshenv 或 .im-coder 目录的 config.env，否则 launchd daemon 无法获取到配置。此时会返回“Not logged in” 或 “Failed to authenticate” 异常信息
 - 在配置过程中，一直微信扫码失败的话，基本就是因为微信版本较低，无法使用 ClawBot 插件，升级微信即可
-- `IMC_WEIXIN_MEDIA_ENABLED` 只控制图片 / 文件 / 视频的入站下载
-- 语音消息只使用微信自带的语音转文字结果
 - 如果微信没有提供 `voice_item.text`数据，桥会直接报错，不会自行下载或转写原始语音
-- 权限确认使用消息提醒中的文本 `/perm ...` 命令或快捷 `1/2/3` 回复
+
 
 ## 许可与商业授权
 

@@ -149,11 +149,9 @@ When Claude requests to perform an action, manual approval is required:
 
 - The entire installation and configuration process can be completed through conversation within the Coding Agent for a smooth experience
 - When using IM-Coder commands in Codex, no "/" prefix is needed
+- MacOS users using Claude Code via a third-party API must set `ANTHROPIC_BASE_URL` and `ANTHROPIC_AUTH_TOKEN` in `~/.zshenv` or the `config.env` file in the `.im-coder` directory; otherwise the launchd daemon cannot read these settings, and a "Not logged in" or "Failed to authenticate" error will be returned
 - If WeChat QR code scanning keeps failing during configuration, it is most likely because the WeChat version is too old to use the ClawBot plugin — simply upgrade WeChat
-- `IMC_WEIXIN_MEDIA_ENABLED` only controls inbound downloads of images / files / videos
-- Voice messages only use WeChat's built-in speech-to-text result
 - If WeChat does not provide `voice_item.text` data, the bridge will return an error directly without downloading or transcribing the raw voice audio
-- Permission approval uses the text `/perm ...` command or quick `1/2/3` replies from the message prompt
 
 ## License & Commercial Licensing
 
