@@ -145,6 +145,10 @@ When Claude requests to perform an action, manual approval is required:
 
 - `/help` — Show all available commands
 
+## More Configuration
+
+IM-Coder's configuration file is `~/.im-coder/config.env`. More configurable options are described in [config.env.example](config.env.example). One setting worth noting is "YOLO" mode, which is recommended to try.
+
 ## FAQ
 
 - The entire installation and configuration process can be completed through conversation within the Coding Agent for a smooth experience

@@ -116,7 +116,7 @@ im-coder start
 
 ## 聊天窗口命令
 
-在 IM 中，可以通过以下斜杠指令控制 Coding Agent 会话：  
+在 IM 中，可以通过以下斜杠指令控制 Coding Agent 会话：
 
 ### 会话管理
 
@@ -144,13 +144,15 @@ im-coder start
 
 - `/help` — 显示所有可用指令
 
+## 更多配置
+IM-Coder 的配置文件是 ~/.im-coder/config.env。更多可配置的配置项在[config.env.example](config.env.example)中有介绍。值得一提的是“YOLO”模式，推荐试用。
+
 ## 常见问题
 - 整个安装配置过程均可在 Coding Agent 中通过对话完成，体验丝滑
 - 在 Codex 中使用 IM-Coder 命令，无需输入“/”
 - MacOS 用户在通过第三方 API 使用 Claude Code 时，需将 ANTHROPIC_BASE_URL、ANTHROPIC_AUTH_TOKEN 设置在 ~/.zshenv 或 .im-coder 目录的 config.env，否则 launchd daemon 无法获取到配置。此时会返回“Not logged in” 或 “Failed to authenticate” 异常信息
 - 在配置过程中，一直微信扫码失败的话，基本就是因为微信版本较低，无法使用 ClawBot 插件，升级微信即可
 - 如果微信没有提供 `voice_item.text`数据，桥会直接报错，不会自行下载或转写原始语音
-
 
 ## 许可与商业授权
 
